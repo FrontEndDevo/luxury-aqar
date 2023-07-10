@@ -1,9 +1,16 @@
 /* Global Rules */
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 :root {
+  --text_color: white;
   --main_color: #e89d2d;
+  --secondary_color: #cccccc;
+  --bg_color: #011f2a;
+  --fast_transition: 0.2s;
+  --slow_transition: 0.5s;
 }
 html {
   scroll-behavior: smooth;
@@ -11,36 +18,171 @@ html {
 body {
   font-family: "Playfair Display", serif;
   font-family: "Montserrat", sans-serif;
+  color: white;
 }
 ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 a {
   text-decoration: none;
 }
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+
+/* Start Header */
+
+/* Start Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--bg_color);
+  padding: 1rem 0;
 }
-/* Small */
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
-/* Medium */
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
+
+.navbar .logo img {
+  width: 50px;
+  height: 50px;
 }
-/* Large */
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
+
+.navbar .logo .real-estate .advertise {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--main_color);
+  width: fit-content;
+  border-radius: 1rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-bottom: 5px;
 }
+
+.navbar .logo .real-estate .advertise i {
+  color: black;
+}
+
+.navbar .logo .real-estate .advertise button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.navbar .logo .real-estate p {
+  color: var(--secondary_color);
+  font-size: 10px;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar .links a {
+  color: var(--secondary_color);
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: var(--fast_transition);
+  position: relative;
+}
+
+.navbar .links a:hover {
+  color: var(--text_color);
+}
+
+.navbar .links a::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  transition: var(--fast_transition);
+  background-color: var(--text_color);
+}
+
+.navbar .links a:hover::before {
+  width: 100%;
+}
+
+.navbar .links a:hover {
+  color: var(--text_color);
+}
+
+.navbar .links li:first-child a {
+  color: var(--main_color);
+}
+
+.navbar .links li:first-child a::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  transition: var(--fast_transition);
+  background-color: var(--main_color);
+}
+
+.navbar .links li:first-child a:hover::before {
+  width: 70%;
+}
+
+.navbar .language {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar .language i {
+  font-size: 10px;
+}
+
+.navbar .language button {
+  background-color: transparent;
+  color: var(--text_color);
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.navbar .language .login,
+.lang {
+  display: flex;
+  gap: 5px;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.navbar .language .login {
+  color: var(--main_color);
+}
+
+.navbar .language .login button {
+  color: var(--main_color);
+}
+
+.navbar .language .lang button {
+  text-transform: uppercase;
+}
+
+.navbar .language .lang i {
+  transition: var(--slow_transition);
+  transform: rotateY(0);
+}
+
+.navbar .language .lang:hover i {
+  transform: rotateY(180deg);
+}
+/* 
+.navbar .language .lang i:hover {
+  transform: rotateY(180deg);
+} */
+/* End Navbar */
+
+/* End Header */
