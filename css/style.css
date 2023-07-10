@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 :root {
-  /* There will be the variables here.*/
+  --main_color: #e89d2d;
 }
 html {
   scroll-behavior: smooth;
