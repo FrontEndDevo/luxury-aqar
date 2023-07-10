@@ -9,7 +9,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Cairo", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
 }
 ul {
   list-style: none;
