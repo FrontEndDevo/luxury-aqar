@@ -37,6 +37,9 @@ a {
   justify-content: space-evenly;
   background-color: var(--bg_color);
   padding: 1rem 0;
+  position: fixed;
+  z-index: 111111;
+  width: 100vw;
 }
 
 .navbar .logo {
@@ -180,10 +183,6 @@ a {
 .navbar .language .lang:hover i {
   transform: rotateY(180deg);
 }
-/* 
-.navbar .language .lang i:hover {
-  transform: rotateY(180deg);
-} */
 /* End Navbar */
 
 /* Start the main Header */
@@ -192,7 +191,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 85vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
