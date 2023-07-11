@@ -159,7 +159,7 @@ a {
 .lang {
   display: flex;
   gap: 5px;
-  align-items: flex-end;
+  align-items: center;
   cursor: pointer;
 }
 
