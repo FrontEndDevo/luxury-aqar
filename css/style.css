@@ -5,7 +5,6 @@
   margin: 0;
 }
 :root {
-  --text_color: white;
   --main_color: #e89d2d;
   --secondary_color: #cccccc;
   --bg_color: #011f2a;
@@ -16,7 +15,6 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Playfair Display", serif;
   font-family: "Playfair Display", serif;
   font-family: "Montserrat", sans-serif;
   color: white;
@@ -97,7 +95,7 @@ a {
 }
 
 .navbar .links a:hover {
-  color: var(--text_color);
+  color: var(--white);
 }
 
 .navbar .links a::before {
@@ -108,7 +106,7 @@ a {
   width: 0;
   height: 1px;
   transition: var(--fast_transition);
-  background-color: var(--text_color);
+  background-color: var(--white);
 }
 
 .navbar .links a:hover::before {
@@ -116,7 +114,7 @@ a {
 }
 
 .navbar .links a:hover {
-  color: var(--text_color);
+  color: var(--white);
 }
 
 .navbar .links li:first-child a {
@@ -149,7 +147,7 @@ a {
 
 .navbar .language button {
   background-color: transparent;
-  color: var(--text_color);
+  color: var(--white);
   border: none;
   font-size: 12px;
   cursor: pointer;
@@ -217,7 +215,7 @@ a {
   bottom: 0;
   right: 0;
   width: 70%;
-  height: 5px;
+  height: 3px;
 }
 
 .header .title {
@@ -332,7 +330,218 @@ a {
 
 /* Start Properties section */
 .properties {
-  
+  position: relative;
+  background-color: var(--bg_color);
+  padding: 4rem 0;
+}
+
+.properties::after {
+  content: "";
+  background-color: var(--main_color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  height: 3px;
+}
+
+.properties .right {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  opacity: 0.5;
+  top: 1rem;
+  right: 1rem;
+}
+.properties .left {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  opacity: 0.5;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.properties .title {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 18rem;
+}
+
+.properties .title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 7px;
+  border-radius: 1rem;
+  background-color: var(--main_color);
+}
+
+.properties .title h2 {
+  font-size: 14px;
+}
+
+.properties .title h2 span {
+  color: var(--main_color);
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+}
+
+.properties .items {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.properties .items .item {
+  position: relative;
+  border: 2px solid var(--main_color);
+  border-radius: 10px;
+  width: fit-content;
+  padding: 7px;
+  background-color: white;
+  color: black;
+  transition: var(--fast_transition);
+}
+
+.properties .items .item:hover {
+  transform: translateY(-20px);
+}
+
+.properties .items .item .image .main {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  border: 2px solid var(--main_color);
+}
+
+.properties .items .item .image .buttons button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 2rem;
+}
+
+.properties .items .item .image .buttons button:nth-child(1) {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  left: 0;
+  margin-left: 2rem;
+}
+
+.properties .items .item .image .buttons button:nth-child(2) {
+  background-color: #e89d2dca;
+  right: 0;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  transition: var(--fast_transition);
+}
+
+.properties .items .item .image .buttons button:nth-child(2):hover {
+  background-color: var(--main_color);
+}
+
+.properties .items .item .image .identity {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 10px solid var(--bg_color);
+  position: absolute;
+  top: 280px;
+  right: 30px;
+}
+
+.properties .items .item .information {
+  margin: 12px 0;
+}
+
+.properties .items .item .information .city {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.properties .items .item .information .city i {
+  color: var(--main_color);
+}
+
+.properties .items .item .information .currency {
+  margin: 12px 0;
+  display: flex;
+  gap: 5px;
+  font-weight: bold;
+}
+
+.properties .items .item .information .name {
+  margin: 12px 0;
+  font-weight: bold;
+  color: black;
+}
+
+.properties .items .item .information .unit {
+  margin: 12px 0;
+}
+
+.properties .items .item .information .details-share {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.properties .items .item .information .details-share .details {
+  background-color: #cccccc4f;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 5px;
+}
+
+.properties .items .item .information .details-share .details div span {
+  font-weight: bold;
+}
+
+.properties .items .item .information .details-share .details div i {
+  color: var(--main_color);
+}
+
+.properties .items .item .information .details-share .details p {
+  margin-top: 10px;
+}
+
+.properties .items .item .information .details-share .share {
+  display: flex;
+  gap: 1rem;
+}
+
+.properties .items .item .information .details-share .share i {
+  border-radius: 50%;
+  background-color: var(--main_color);
+  padding: 8px;
+  cursor: pointer;
+}
+
+.properties .more {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.properties .more button {
+  border: none;
+  cursor: pointer;
+  background-color: var(--main_color);
+  padding: 1rem 2rem;
+  border-radius: 60px;
+  outline: none;
+  font-size: 1rem;
 }
 
 /* End Properties section */
