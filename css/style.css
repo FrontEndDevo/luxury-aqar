@@ -661,3 +661,127 @@ a {
 }
 
 /* End services section */
+
+/* Start footer */
+.footer {
+  position: relative;
+  background-color: var(--bg_color);
+}
+
+.footer .contacts {
+  /* position: absolute; */
+  /* top: -10rem; */
+  /* left: 30%; */
+  border: 2px solid var(--main_color);
+  width: fit-content;
+  padding: 1rem 6rem;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  background-color: var(--bg_color);
+  position: absolute;
+  top: -5rem;
+  transform: translateX(25%);
+}
+
+.footer .contacts .phone h2,
+.footer .contacts .location h2,
+.footer .contacts .email h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+
+.footer .contacts .phone,
+.footer .contacts .location,
+.footer .contacts .email {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.footer .contacts .phone .main,
+.footer .contacts .location .main,
+.footer .contacts .email .main {
+  color: var(--main_color);
+  font-size: 2rem;
+}
+
+.footer .contacts .phone i {
+  color: var(--main_color);
+  font-size: 12px;
+}
+
+.footer .contacts .phone .numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.footer a {
+  color: white;
+  opacity: 0.6;
+  transition: var(--slow_transition);
+}
+
+.footer a:hover {
+  color: var(--main_color);
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.footer .contacts .location .locations {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.footer .contacts .email .addresess {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer .foot {
+  background-image: url("../images/footer.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 50% 40%;
+  position: relative;
+  padding: 10rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer .foot img {
+  width: 150px;
+  height: 150px;
+}
+
+.footer .foot p {
+  width: 400px;
+  opacity: 0.7;
+  line-height: 1.7;
+}
+
+.footer .foot h5 {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+}
+
+.footer .foot .links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer .foot .help {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* End footer */
