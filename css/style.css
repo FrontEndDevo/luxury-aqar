@@ -545,3 +545,119 @@ a {
 }
 
 /* End Properties section */
+
+/* Start services section */
+.services {
+  position: relative;
+  padding: 4rem 0;
+  background-image: url("../images/services.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+
+.services::before {
+  content: "";
+  background-color: var(--bg_color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.services .title {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 4rem;
+  margin-left: 18rem;
+}
+
+.services .title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 7px;
+  border-radius: 1rem;
+  background-color: var(--main_color);
+}
+
+.services .title h2 {
+  font-size: 14px;
+}
+
+.services .title h2 span {
+  color: var(--main_color);
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+}
+
+.services .boxes {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  color: black;
+}
+
+.services .box:nth-child(1) {
+  transform: translateY(-2rem);
+}
+
+.services .box:nth-child(2) {
+  transform: translateY(-1rem);
+}
+
+.services .boxes .box {
+  position: relative;
+  z-index: 111;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  border: 2px dashed var(--main_color);
+  border-radius: 2rem;
+}
+
+.services .boxes .box:hover {
+  background-color: white;
+}
+
+.services .boxes .box i:not(:last-child) {
+  position: absolute;
+  top: -1.5rem;
+  right: 2rem;
+  border-radius: 50%;
+  background-color: var(--main_color);
+  color: white;
+  padding: 1rem;
+}
+
+.services .boxes .box .service h4 {
+  font-size: 1.5rem;
+  font-family: "Playfair Display", serif;
+}
+
+.services .boxes .box .service p {
+  margin: 1rem 0;
+  width: 20vw;
+  color: var(--secondary_color);
+}
+
+.services .boxes .box .service .more {
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--main_color);
+  border: none;
+  outline: none;
+}
+
+.services .boxes .box .service .more i {
+  transition: var(--fast_transition);
+}
+
+.services .boxes .box .service .more:hover i {
+  transform: translateX(5px);
+}
+
+/* End services section */
