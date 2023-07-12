@@ -784,4 +784,39 @@ a {
   flex-direction: column;
   gap: 10px;
 }
+
+.footer .rights {
+  background-color: black;
+  display: flex;
+  padding: 12px 0;
+  justify-content: space-around;
+}
+
+.footer .rights .copy a {
+  color: var(--main_color);
+  opacity: 1;
+}
+
+.footer .rights .copy a:hover {
+  text-decoration: none;
+}
+
+.footer .rights .social {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer .rights .social i {
+  border-radius: 50%;
+  background-color: var(--main_color);
+  color: black;
+  padding: 5px;
+  cursor: pointer;
+  transition: var(--slow_transition);
+}
+
+.footer .rights .social i:hover {
+  background-color: white;
+}
+
 /* End footer */
