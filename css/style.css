@@ -1096,4 +1096,55 @@ a {
   background-color: white;
 }
 
+/* Responsive styles for tablet */
+@media (max-width: 1199px) {
+  .footer .contacts {
+    padding: 1rem 3rem;
+    gap: 3rem;
+    top: -6rem;
+    transform: unset;
+    margin: 0 2rem;
+  }
+
+  .footer .contacts .phone h2,
+  .footer .contacts .location h2,
+  .footer .contacts .email h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+  }
+
+  .footer .contacts .phone i {
+    color: var(--main_color);
+    font-size: 12px;
+  }
+
+  .footer .contacts .phone .numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer .foot {
+    padding: 8rem 0;
+  }
+
+  .footer .foot img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .footer .foot p {
+    width: 300px;
+    text-align: justify;
+  }
+
+  .footer .foot .links {
+    gap: 1rem;
+  }
+
+  .footer .foot .help {
+    gap: 1rem;
+  }
+}
+
 /* End footer */
