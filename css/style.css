@@ -219,9 +219,7 @@ a {
     background-color: #2a2a2af7;
     width: 90vw;
     height: 100vh;
-    /* padding: 0 1rem; */
-    display: flex;
-    flex-direction: column;
+    display: none;
   }
 
   .navbar .mobile .links-mobile li {
