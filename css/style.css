@@ -19,6 +19,13 @@ body {
   font-family: "Montserrat", sans-serif;
   color: white;
 }
+
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
 ul {
   list-style: none;
 }
@@ -324,6 +331,48 @@ a {
 .header .search .submit i {
   font-size: 12px;
 }
+
+/* Responsive styles for mobile */
+@media (max-width: 767px) {
+  .header {
+    height: 60vh;
+  }
+
+  .header .title h1 {
+    font-size: 2rem;
+  }
+
+  .header .title p {
+    font-size: 14px;
+    margin: 1rem 1rem 0;
+  }
+
+  .header .buttons {
+    display: flex;
+    gap: 3rem;
+    margin: 3rem 0 1rem;
+    z-index: 100;
+  }
+
+  .header .buttons button {
+    display: none;
+  }
+
+  .header .buttons .property {
+    display: block;
+    background-color: white;
+    color: var(--main_color);
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    outline: none;
+    margin-top: -2rem;
+  }
+
+  .header .search {
+    display: none;
+  }
+}
+
 /* End the main Header */
 
 /* End Header */
@@ -544,6 +593,76 @@ a {
   font-size: 1rem;
 }
 
+/* Responsive styles for mobile */
+@media (max-width: 767px) {
+  .properties .right {
+    width: 100px;
+    height: 150px;
+  }
+  .properties .left {
+    width: 100px;
+    height: 100px;
+  }
+
+  .properties .title {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .properties .title::before {
+    left: 30%;
+  }
+
+  .properties .title h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.7;
+  }
+
+  .properties .title h2 span {
+    font-size: 1.5rem;
+  }
+
+  .properties .items {
+    flex-direction: column;
+    margin: 2rem 1rem 0;
+  }
+
+  .properties .items .item {
+    width: 100%;
+  }
+
+  .properties .items .item:hover {
+    transform: unset;
+  }
+
+  .properties .items .item .image .main {
+    width: 100%;
+  }
+
+  .properties .items .item .image .identity {
+    width: 60px;
+    height: 60px;
+    top: 270px;
+  }
+
+  .properties .items .item .information .details-share .share i {
+    padding: 12px;
+    font-size: 20px;
+  }
+
+  .properties .more {
+    margin-top: 2rem;
+  }
+
+  .properties .more button {
+    padding: 1.5rem 2rem;
+    font-size: 1.2rem;
+  }
+}
+
 /* End Properties section */
 
 /* Start services section */
@@ -669,9 +788,6 @@ a {
 }
 
 .footer .contacts {
-  /* position: absolute; */
-  /* top: -10rem; */
-  /* left: 30%; */
   border: 2px solid var(--main_color);
   width: fit-content;
   padding: 1rem 6rem;
