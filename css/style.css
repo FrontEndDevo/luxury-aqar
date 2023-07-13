@@ -374,7 +374,7 @@ a {
 }
 
 /* Responsive styles for tablet */
-@media (max-width: 1199px) {
+@media (max-width: 1199px) and (min-width: 768px) {
   .header {
     height: 60vh;
   }
@@ -690,7 +690,7 @@ a {
 }
 
 /* Responsive styles for tablet */
-@media (max-width: 1199px) {
+@media (max-width: 1199px) and (min-width: 768px) {
   .properties .right {
     width: 100px;
     height: 150px;
@@ -889,7 +889,7 @@ a {
   .services .boxes {
     gap: 1rem;
     flex-direction: column;
-    margin: 3rem 0;
+    margin: 3rem 0; 
   }
 
   .services .boxes .box .service p {
@@ -899,7 +899,7 @@ a {
 }
 
 /* Responsive styles for tablet */
-@media (max-width: 1199px) {
+@media (max-width: 1199px) and (min-width: 768px) and (min-width: 768px) {
   .services {
     padding: 2rem 1rem 10rem;
     height: unset;
@@ -1097,7 +1097,7 @@ a {
 }
 
 /* Responsive styles for tablet */
-@media (max-width: 1199px) {
+@media (max-width: 1199px) and (min-width: 768px) {
   .footer .contacts {
     padding: 1rem 3rem;
     gap: 3rem;
