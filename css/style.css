@@ -663,6 +663,65 @@ a {
   }
 }
 
+/* Responsive styles for tablet */
+@media (max-width: 1199px) {
+  .properties .right {
+    width: 100px;
+    height: 150px;
+  }
+  .properties .left {
+    width: 100px;
+    height: 100px;
+  }
+
+  .properties .title {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .properties .title::before {
+    left: 40%;
+  }
+
+  .properties .title h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.7;
+  }
+
+  .properties .title h2 span {
+    font-size: 2rem;
+  }
+
+  .properties .items {
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+  }
+
+  .properties .items .item .image .identity {
+    width: 60px;
+    height: 60px;
+    top: 270px;
+  }
+
+  .properties .items .item .information .details-share .share i {
+    padding: 12px;
+    font-size: 20px;
+  }
+
+  .properties .more {
+    margin-top: 2rem;
+  }
+
+  .properties .more button {
+    padding: 1.5rem 2rem;
+    font-size: 1.2rem;
+  }
+}
+
 /* End Properties section */
 
 /* Start services section */
