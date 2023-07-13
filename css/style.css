@@ -373,6 +373,32 @@ a {
   }
 }
 
+/* Responsive styles for tablet */
+@media (max-width: 1199px) {
+  .header {
+    height: 60vh;
+  }
+
+  .header .buttons button {
+    display: none;
+  }
+
+  .header .buttons .property {
+    display: block;
+    background-color: white;
+    color: var(--main_color);
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    outline: none;
+    margin-top: -2rem;
+    font-size: 1.5rem;
+  }
+
+  .header .search {
+    display: none;
+  }
+}
+
 /* End the main Header */
 
 /* End Header */
