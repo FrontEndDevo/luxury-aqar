@@ -901,7 +901,7 @@ a {
 /* Responsive styles for tablet */
 @media (max-width: 1199px) {
   .services {
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 10rem;
     height: unset;
   }
 
