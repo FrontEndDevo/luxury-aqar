@@ -864,6 +864,40 @@ a {
   transform: translateX(5px);
 }
 
+/* Responsive styles for mobile */
+@media (max-width: 767px) {
+  .services {
+    padding: 2rem 1rem;
+    height: unset;
+  }
+
+  .services .title {
+    position: relative;
+    padding-left: unset;
+    margin: unset;
+    margin-left: 1rem;
+  }
+
+  .services .title::before {
+    left: -15px;
+  }
+
+  .services .title h2 span {
+    font-size: 1.5rem;
+  }
+
+  .services .boxes {
+    gap: 1rem;
+    flex-direction: column;
+    margin: 3rem 0;
+  }
+
+  .services .boxes .box .service p {
+    width: unset;
+    color: black;
+  }
+}
+
 /* End services section */
 
 /* Start footer */
