@@ -898,6 +898,48 @@ a {
   }
 }
 
+/* Responsive styles for tablet */
+@media (max-width: 1199px) {
+  .services {
+    padding: 2rem 1rem;
+    height: unset;
+  }
+
+  .services .title {
+    position: relative;
+    padding-left: unset;
+    margin: unset;
+    margin-left: 1rem;
+  }
+
+  .services .title::before {
+    left: -15px;
+  }
+
+  .services .title h2 span {
+    font-size: 1.5rem;
+  }
+
+  .services .boxes {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .services .boxes .box {
+    padding: 15px;
+  }
+
+  .services .boxes .box i:not(:last-child) {
+    font-size: 1.5rem;
+  }
+
+  .services .boxes .box .service p {
+    width: unset;
+    color: black;
+  }
+}
+
 /* End services section */
 
 /* Start footer */
