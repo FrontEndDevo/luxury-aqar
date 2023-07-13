@@ -867,7 +867,7 @@ a {
 /* Responsive styles for mobile */
 @media (max-width: 767px) {
   .services {
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 10rem;
     height: unset;
   }
 
@@ -889,7 +889,7 @@ a {
   .services .boxes {
     gap: 1rem;
     flex-direction: column;
-    margin: 3rem 0; 
+    margin: 3rem 0;
   }
 
   .services .boxes .box .service p {
@@ -1143,6 +1143,75 @@ a {
   }
 
   .footer .foot .help {
+    gap: 1rem;
+  }
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 767px) {
+  .footer .contacts {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    top: -10rem;
+    transform: unset;
+  }
+
+  .footer .contacts .phone h2,
+  .footer .contacts .location h2,
+  .footer .contacts .email h2 {
+    font-size: 1rem;
+  }
+
+  .footer .contacts .phone .main,
+  .footer .contacts .location .main,
+  .footer .contacts .email .main {
+    font-size: 1.5rem;
+  }
+
+  .footer .contacts .location .locations {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .footer .foot {
+    background-size: 90% 10%;
+    padding: 20rem 0 5rem;
+    gap: 1rem;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .footer .foot img {
+    width: 100px;
+    height: 100px;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+  .footer .foot p {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+
+  .links {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .help {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .footer .rights {
+    padding: 1rem;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
     gap: 1rem;
   }
 }
