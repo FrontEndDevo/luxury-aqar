@@ -1251,6 +1251,34 @@ a {
   background-color: var(--main_color);
 }
 
+/* Responsive styles for mobile */
+@media (max-width: 767px) {
+  .projects .title {
+    margin-left: 1rem;
+  }
+
+  .projects .title h2 span {
+    font-size: 2rem;
+  }
+
+  .projects .container .all-projects .project {
+    margin: 0 1rem;
+  }
+
+  .projects .container .all-projects .project img {
+    width: calc(100vw - 4rem);
+    height: 200px;
+  }
+
+  .projects i {
+    display: none;
+  }
+
+  .projects .slider-bullets {
+    display: none;
+  }
+}
+
 /* End projects section */
 
 /* Start footer */
