@@ -1129,6 +1129,115 @@ a {
 
 /* End services section */
 
+/* Start projects section */
+.projects {
+  background-color: white;
+  position: relative;
+  padding: 4rem 0 15rem;
+}
+
+.projects::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: url("../images/projects/projects.webp");
+  background-position: bottom center;
+  width: 100vw;
+  height: 40%;
+  opacity: 0.3;
+}
+
+.projects .title {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 18rem;
+}
+
+.projects .title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 7px;
+  border-radius: 1rem;
+  background-color: var(--main_color);
+}
+
+.projects .title h2 {
+  color: black;
+  font-weight: normal;
+}
+
+.projects .title h2 span {
+  color: var(--main_color);
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+}
+
+.projects .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.projects .container .all-projects {
+  display: flex;
+  gap: 1rem;
+  z-index: 100;
+  overflow: hidden;
+  width: calc((400px + 4rem) * 3);
+}
+
+.projects .container .all-projects .project {
+  padding: 1rem;
+  background-color: #011f2ad8;
+  border: 3px solid var(--main_color);
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.projects .container .all-projects .project img {
+  width: 400px;
+  height: 250px;
+  border-radius: 2rem;
+}
+
+.projects .container .all-projects .project .info h2 {
+  font-family: "Playfair Display", serif;
+  margin: 10px 0;
+}
+
+.projects .container .all-projects .project .info p {
+  color: var(--secondary_color);
+}
+
+.projects .container i {
+  font-size: 5rem;
+  color: var(--main_color);
+}
+
+.projects .slider-bullets {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  position: absolute;
+  bottom: 10rem;
+  left: 40%;
+}
+
+.projects .slider-bullets span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--bg_color);
+}
+
+/* End projects section */
+
 /* Start footer */
 .footer {
   position: relative;
