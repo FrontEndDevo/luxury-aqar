@@ -1279,6 +1279,43 @@ a {
   }
 }
 
+@media (max-width: 1199px) and (min-width: 768px) {
+  .projects {
+    background-color: white;
+    position: relative;
+    padding: 4rem 0 15rem;
+  }
+
+  .projects .title {
+    margin-left: 1rem;
+  }
+
+  .projects .title h2 span {
+    font-size: 2rem;
+  }
+
+  .projects .container {
+    width: calc(338px * 2);
+  }
+
+  .projects .container .all-projects .project img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .projects .left-arrow {
+    left: 2px;
+  }
+
+  .projects .right-arrow {
+    right: 2px;
+  }
+
+  .projects .slider-bullets {
+    display: none;
+  }
+}
+
 /* End projects section */
 
 /* Start footer */
