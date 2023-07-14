@@ -1178,18 +1178,17 @@ a {
 }
 
 .projects .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;
   gap: 2rem;
+  position: relative;
+  width: calc(438px * 3);
+  margin: 0 auto;
 }
 
 .projects .container .all-projects {
   display: flex;
-  gap: 1rem;
   z-index: 100;
-  overflow: hidden;
-  width: calc((400px + 4rem) * 3);
+  transition: var(--slow_transition);
 }
 
 .projects .container .all-projects .project {
@@ -1215,9 +1214,20 @@ a {
   color: var(--secondary_color);
 }
 
-.projects .container i {
+.projects i {
   font-size: 5rem;
   color: var(--main_color);
+  position: absolute;
+  z-index: 1111;
+  top: 40%;
+}
+
+.projects .left-arrow {
+  left: 10rem;
+}
+
+.projects .right-arrow {
+  right: 10rem;
 }
 
 .projects .slider-bullets {
@@ -1230,10 +1240,15 @@ a {
 }
 
 .projects .slider-bullets span {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background-color: var(--bg_color);
+  cursor: pointer;
+}
+
+.projects .slider-bullets .active {
+  background-color: var(--main_color);
 }
 
 /* End projects section */
