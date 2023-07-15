@@ -1200,7 +1200,7 @@ a {
   overflow: hidden;
   gap: 2rem;
   position: relative;
-  width: 389px;
+  width: calc(438px * 3);
   margin: 0 auto;
 }
 
@@ -1278,6 +1278,10 @@ a {
 
   .projects .title h2 span {
     font-size: 2rem;
+  }
+
+  .projects .container {
+    width: 389px;
   }
 
   .projects .container .all-projects .project {
