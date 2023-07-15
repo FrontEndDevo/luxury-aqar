@@ -12,6 +12,26 @@ const projects = document.querySelectorAll(".project");
 const sliderBullets = document.querySelector(".slider-bullets");
 const bullets = document.querySelectorAll(".bullet");
 
+// Progress Circle:
+const progressCircle = document.getElementById("progress-circle");
+
+// Take me up of the page when click.
+progressCircle.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+window.addEventListener("scroll", () => {
+  const scrollPosition = window.scrollY;
+  if (scrollPosition > 200) {
+    progressCircle.style.display = "flex";
+  } else {
+    progressCircle.style.display = "none";
+  }
+});
+
 // An event to (disappear) the navbar menu when click the Xmark.
 navbarCloseMenu.addEventListener("click", () => {
   navbarMenu.style.display = "none";
